@@ -1,0 +1,24 @@
+@import "../../../globals.scss";
+
+.HeaderLinks {
+  margin: 0.5rem;
+  text-align: right;
+  display: flex;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  justify-content: right;
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $theme--dark;
+  }
+
+  a:active {
+    color: $theme--dark;
+  }
+}

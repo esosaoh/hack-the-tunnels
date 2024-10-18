@@ -1,0 +1,19 @@
+.WorksheetSection {
+  th {
+    padding: 0.5rem;
+    background-color: #cccccc;
+    text-align: left;
+    border: solid 1px #d3d3d3;
+  }
+
+  td {
+    padding: 0.5rem;
+    border: solid 1px #d3d3d3;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: solid 1px #d3d3d3;
+    width: 100%;
+  }
+}

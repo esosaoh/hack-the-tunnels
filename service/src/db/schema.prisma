@@ -1,0 +1,74 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Course {
+  id              Int              @id @default(autoincrement())
+  subjectCode     String
+  courseCode      String
+  title           String
+  shortTitle      String
+  description     String
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  scheduledEvents ScheduledEvent[]
+}
+
+model ScheduledEvent {
+  id                                 Int              @id @default(autoincrement())
+  crn                                String           @unique
+  section                            String
+  instructor                         String
+  credit                             String
+  type                               String
+  term                               String
+  days                               String
+  startTime                          String
+  endTime                            String
+  additionalRegistrationRequirements String
+  url                                String
+  description                        String
+  courseId                           Int
+  course                             Course           @relation(fields: [courseId], references: [id])
+  createdAt                          DateTime         @default(now())
+  updatedAt                          DateTime         @updatedAt
+  timetableEvents                    TimetableEvent[]
+}
+
+model TimetableEvent {
+  id               Int            @id @default(autoincrement())
+  scheduledEventId Int
+  scheduledEvent   ScheduledEvent @relation(fields: [scheduledEventId], references: [id])
+  timetableId      Int
+  timetable        Timetable      @relation(fields: [timetableId], references: [id])
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+}
+
+model Timetable {
+  id              Int              @id @default(autoincrement())
+  name            String
+  accountId       Int
+  account         Account          @relation(fields: [accountId], references: [id])
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  timetableEvents TimetableEvent[]
+}
+
+model Account {
+  id         Int         @id @default(autoincrement())
+  email      String      @unique
+  password   String
+  role       String
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  timetables Timetable[]
+}

@@ -1,0 +1,28 @@
+@import "../../../globals.scss";
+
+.Banner {
+  padding: 0.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  background-color: $theme;
+  gap: 2rem;
+
+  img {
+    height: 3rem;
+  }
+
+  &__seperator {
+    height: 100%;
+    opacity: 0.3;
+    background-color: white;
+    width: 0.13rem;
+  }
+
+  &__title {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1.6rem;
+  }
+}

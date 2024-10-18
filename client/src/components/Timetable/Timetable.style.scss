@@ -1,0 +1,48 @@
+@import "../../globals.scss";
+
+.Timetable {
+  font-size: 0.8rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: black;
+
+    tr {
+      border: solid 2px #e0e0e0;
+    }
+
+    td {
+      border: solid 2px #e0e0e0;
+      padding: 10px;
+      text-align: center;
+      height: 10px;
+    }
+
+    th {
+      width: 5rem !important;
+      max-width: 5rem !important;
+    }
+  }
+
+  &__head {
+    background-color: #cccccc;
+  }
+
+  &__cell--event {
+    background-color: #cccccc;
+  }
+
+  &__cell--time {
+    border-bottom: solid 2px #ffffff !important;
+  }
+
+  &__cell--multiple-events {
+    background-color: rgba($theme--dark, 0.31);
+    color: $theme--dark;
+    font-weight: bold;
+  }
+}

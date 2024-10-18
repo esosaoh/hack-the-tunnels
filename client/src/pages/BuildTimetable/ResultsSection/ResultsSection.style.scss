@@ -1,0 +1,80 @@
+.ResultsSection {
+  &__topbar {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+
+    &__item {
+      font-weight: bold;
+      width: fit-content;
+    }
+  }
+
+  &__result {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+
+    &__topbar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    &--gray {
+      background: #dcdcdc;
+    }
+
+    &--light-gray {
+      background: #c0c0c0;
+    }
+
+    &__content {
+      padding-left: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  &__results {
+    max-height: 25rem;
+    overflow-y: auto;
+  }
+
+  &__crn {
+    width: 5rem;
+  }
+
+  &__add {
+    width: 4rem;
+  }
+
+  &__subject {
+    width: 7rem;
+  }
+
+  &__section {
+    width: 6rem;
+  }
+
+  &__title {
+    width: 12rem;
+  }
+
+  &__credit {
+    width: 5rem;
+  }
+
+  &__type {
+    width: 8rem;
+  }
+
+  &__instructor {
+    width: 9rem;
+  }
+}

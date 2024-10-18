@@ -1,0 +1,22 @@
+@import "../../../globals.scss";
+
+.CabinetSection {
+  display: flex;
+  gap: 0.5rem;
+  img {
+    height: 3.2rem;
+  }
+
+  li {
+    font-size: 70%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $theme--dark;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

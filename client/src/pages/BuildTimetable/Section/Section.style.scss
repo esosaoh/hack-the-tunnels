@@ -1,0 +1,16 @@
+.Section {
+  border: 1px solid #d3d3d3;
+  font-size: 0.8rem;
+
+  &__header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
