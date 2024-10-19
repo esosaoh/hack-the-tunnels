@@ -9,14 +9,10 @@
   font-family:'Poppins';
   table {
     width: 100%;
-    //border-collapse: collapse;
-    //border-spacing: 0px;
-    
+
+    border-spacing: 2px;
     border-color: black;
     
-    .Timetable_cell--time{
-      background-color: #e0e0e0;
-    }
     tr{
       border-collapse: collapse;
     }
@@ -37,10 +33,6 @@
       color: #ffffff;
     }
   }
-  .Timetable__head {
-    margin:0;
-    border-spacing: 0px;
-  }
 
   &__head {
     height: 60px;
@@ -48,17 +40,18 @@
   }
 
   &__cell--event {
-    background-color: #d6d6d6;
+    background-color: #bee9b1;
     border-radius: 10%;
   }
 
   &__cell--time {
     //border-bottom: solid 2px #ffffff !important;
+    border: none;
   }
 
   &__cell--multiple-events {
-    background-color: rgb(214, 52, 79);
-    color: $theme--dark;
+    background-color: #f05135;
+    color: rgb(255, 255, 255);
     font-weight: bold;
   }
 }
