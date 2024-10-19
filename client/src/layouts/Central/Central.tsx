@@ -22,7 +22,7 @@ function Central({ title, children }: Props) {
     <Base>
       <Banner />
       <div className="Central__page">
-        <button id="darkModeBtn" onClick={toggleDarkMode}>Dark Mode</button>
+        <button id="darkModeBtn" onClick={toggleDarkMode}>{darkMode ? "LightMode" : "DarkMode"}</button>
         <HeaderLinks darkMode={darkMode}/>
         <Navigation />
         <h2 className="Central__page__title">{title}</h2>

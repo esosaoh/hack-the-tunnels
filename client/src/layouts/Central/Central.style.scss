@@ -1,7 +1,5 @@
 @import "../../globals.scss";
-
 .Central {
-
   &__page {
     height: 100vh;
     padding-left: 2%;
@@ -13,8 +11,9 @@
       arial narrow,
       helvetica,
       sans-serif;
+      
     #darkModeBtn {
-      border:none;
+      border: none;
       border-radius: 10%;
       background-color: rgb(126, 126, 126);
       color:white;
