@@ -4,6 +4,7 @@ import "./Central.style.scss";
 import { Divider } from "./Divider";
 import { HeaderLinks } from "./HeaderLinks";
 import { Navigation } from "./Navigation";
+import { useState } from "react";
 
 interface Props {
   title: string;
@@ -11,11 +12,18 @@ interface Props {
 }
 
 function Central({ title, children }: Props) {
+  const [darkMode, setDarkMode] = useState(false);
+  function toggleDarkMode() {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-mode");
+  }
+
   return (
     <Base>
       <Banner />
       <div className="Central__page">
-        <HeaderLinks />
+        <button id="darkModeBtn" onClick={toggleDarkMode}>Dark Mode</button>
+        <HeaderLinks darkMode={darkMode}/>
         <Navigation />
         <h2 className="Central__page__title">{title}</h2>
         <Divider />

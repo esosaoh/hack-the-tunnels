@@ -1,0 +1,31 @@
+.MenuFormat {
+  display: flex;               // Enable Flexbox
+  flex-direction: column;      // Stack items vertically
+  justify-content: flex-start; // Align items to the top of the container
+  align-items: stretch;        // Make child items stretch to fill the width
+  height: 100vh;               // Make the container take the full viewport height
+  width: 100vw;                // Make the container take the full viewport width
+  padding: 20px;               // Add padding around the content
+  box-sizing: border-box;      // Ensure padding is included in the element's total width/height
+
+  .CabinetSection {
+    width: 100%;               // Make each section take full width inside the flex container
+    max-width: 1200px;         // Optional: Limit the max width for larger screens
+    margin: 10px auto;         // Add vertical spacing between sections and center them horizontally
+    background-color: #f9f9f9; // Set a background color for sections
+    border-radius: 8px;        // Optional: Add rounded corners
+    padding: 15px;             // Add padding inside each section
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Add a subtle shadow
+  }
+}
+
+@media (max-width: 768px) {
+  .MenuFormat {
+    padding: 10px;            // Reduce padding for smaller screens
+  }
+
+  .CabinetSection {
+    padding: 10px;            // Adjust padding inside sections for smaller screens
+    font-size: 0.9rem;        // Optional: Reduce text size for better mobile readability
+  }
+}

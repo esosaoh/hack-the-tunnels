@@ -17,6 +17,21 @@
     top: 0;
     right: 0;
 
+    @keyframes carletonlogo {
+      0%   {
+        transform: rotate(360deg);
+      }
+    }
+
+    #animatedImage {
+      animation-name: carletonlogo;
+      animation-duration: 4s;
+      animation-direction: reverse;
+      animation-iteration-count: infinite;
+      padding-top: 30%;
+      padding-bottom: 16%;
+    }
+
     img {
       padding-top: 5.625rem;
       max-width: 100%;

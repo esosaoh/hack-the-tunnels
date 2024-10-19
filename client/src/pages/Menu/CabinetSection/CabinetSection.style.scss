@@ -4,6 +4,7 @@
   display: flex;
   color: rgb(255, 255, 255);
   gap: 0.5rem;
+  font-family: 'Poppins';
   img {
     height: 3.2rem;
     color: rgb(255, 0, 0);
@@ -11,6 +12,12 @@
 
   li {
     font-size: 70%;
+  }
+  .title {
+    font-family: 'Righteous';
+    font-style: bold;
+    color: rgb(52, 53, 72);
+    font-size: 20px;
   }
 
   a {
@@ -21,6 +28,8 @@
 
   a:hover {
     text-decoration: underline;
-    color: rgb(255, 217, 0);
+
+    color:rgb(62, 138, 232);
+
   }
 }
