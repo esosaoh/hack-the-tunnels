@@ -1,6 +1,15 @@
 @import "../../../globals.scss";
-
+.HeaderLinks.dark {
+  color:white;
+  a{
+    color:inherit;
+  }
+  img {
+    filter:brightness(0) invert(1);
+  }
+}
 .HeaderLinks {
+  
   margin: 0.5rem;
   text-align: right;
   display: flex;
@@ -9,11 +18,11 @@
   justify-content: right;
   font-family: 'Poppins';
   padding: 0.5rem;
-
+  color:black;
   a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color:inherit;
   }
 
   a:hover {
@@ -23,5 +32,10 @@
 
   a:active {
     color: $theme--dark;
+  }
+  img {
+    max-height: 1rem;
+    padding: 0 3px;
+    filter:none;
   }
 }

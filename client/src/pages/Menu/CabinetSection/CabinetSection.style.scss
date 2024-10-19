@@ -3,12 +3,19 @@
 .CabinetSection {
   display: flex;
   gap: 0.5rem;
+  font-family: 'Poppins';
   img {
     height: 3.2rem;
   }
 
   li {
     font-size: 70%;
+  }
+  .title {
+    font-family: 'Righteous';
+    font-style: bold;
+    color: rgb(52, 53, 72);
+    font-size: 20px;
   }
 
   a {
@@ -18,5 +25,6 @@
 
   a:hover {
     text-decoration: underline;
+    color:rgb(62, 138, 232);
   }
 }

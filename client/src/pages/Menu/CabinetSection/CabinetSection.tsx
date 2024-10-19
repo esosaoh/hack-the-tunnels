@@ -9,9 +9,9 @@ interface CabinetSectionProps {
 function CabinetSection({ title, lineItems }: CabinetSectionProps) {
   return (
     <div className="CabinetSection">
-      <img src="pokemon1.jpeg"></img>
+      <img src="snorlax-sleepy.png"></img>
       <div>
-        <div>{title}</div>
+        <div className="title">{title}</div>
         <ul>
           {lineItems.map((item, index) => (
             <li key={index}>{item}</li>
