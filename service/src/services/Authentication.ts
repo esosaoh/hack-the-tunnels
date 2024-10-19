@@ -1,4 +1,3 @@
-import bcrypt from "bcrypt";
 import { Ok, Err, Result } from "ts-results";
 import jwt from "jsonwebtoken";
 import { AccountService } from "../services";
@@ -17,18 +16,6 @@ export const login = async (
   if (password !== account.password) {
     return Err(new Error("Incorrect password"));
   }
-
-  // HASH PASSWORD HERE
-  const bcrypt = require('bcrypt');
-  const saltRounds = 10;
-  const myPlaintextPassword = password;
-  
-
-  bcrypt.genSalt(saltRounds, function(err, salt) {
-    bcrypt.hash(myPlaintextPassword, salt, function(err, hash) {
-        // Store hash in your password DB.
-    });
-});
 
   const secret = JWT_SECRET;
 
