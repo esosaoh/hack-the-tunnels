@@ -5,13 +5,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
-  background-image: url("/carleton_background.jpg");
+  background-image: url("/bg.jpg");
   font-size: 0.9em;
+  position: relative;
 
   &__panel {
     width: 31.25rem;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     right: 0;
@@ -39,15 +40,21 @@
 
     &__button {
       border: none;
-      background-color: rgb(38, 114, 236);
+      background-color: rgb(236, 38, 38);
       color: rgb(255, 255, 255);
       padding: 0.25rem 1.25rem 0.375rem 1.25rem;
       cursor: pointer;
       font-size: 0.9rem;
 
       &:hover {
-        background: rgb(212, 227, 251);
+        background: rgb(255, 0, 0);
       }
+    }
+
+    &__text {
+      font-weight: normal;
+      font-size: 1.3em;
+      color: rgb(255, 255, 255);
     }
 
     &__content {
@@ -59,6 +66,7 @@
       &__message {
         margin-bottom: 1.875rem;
         font-size: 0.9em;
+        color: white;
 
         a {
           color: #2672ec;
@@ -72,6 +80,7 @@
         display: flex;
         flex-direction: column;
         gap: 0.625rem;
+
         input {
           width: 100%;
           height: 28px;
@@ -85,6 +94,8 @@
         font-size: 0.9rem;
         margin-top: 0.625rem;
         margin-bottom: 2.375rem;
+        color: white;
+
         input {
           margin: auto 0;
           margin-right: 0.25rem;

@@ -26,11 +26,11 @@
     }
 
     &--gray {
-      background: #dcdcdc;
+      background: #a81717;
     }
 
     &--light-gray {
-      background: #c0c0c0;
+      background: #ffffff;
     }
 
     &__content {
@@ -44,37 +44,47 @@
   &__results {
     max-height: 25rem;
     overflow-y: auto;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
   }
 
   &__crn {
     width: 5rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   &__add {
     width: 4rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   &__subject {
     width: 7rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   &__section {
     width: 6rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   &__title {
     width: 12rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   &__credit {
     width: 5rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   &__type {
     width: 8rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   &__instructor {
     width: 9rem;
+    font-family: 'Times New Roman', Times, serif;
   }
 }
