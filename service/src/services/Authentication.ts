@@ -2,6 +2,7 @@ import { Ok, Err, Result } from "ts-results";
 import jwt from "jsonwebtoken";
 import { AccountService } from "../services";
 import { JWT_SECRET } from "../config/jwt";
+import bcrypt from "bcrypt";
 
 export const login = async (
   email: string,
@@ -13,9 +14,12 @@ export const login = async (
     return Err(new Error("Account not found"));
   }
 
-  if (password !== account.password) {
-    return Err(new Error("Incorrect password"));
-  }
+  // Compare the entered password with the stored hashed password
+  // const isPasswordValid = await bcrypt.compare(password, account.password);
+  
+  // if (!isPasswordValid) {
+  //   return Err(new Error("Incorrect password"));
+  // }
 
   const secret = JWT_SECRET;
 
