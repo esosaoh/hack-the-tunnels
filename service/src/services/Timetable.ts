@@ -2,6 +2,8 @@ import { Timetable } from "@prisma/client";
 import { prisma } from "../db";
 import { Result, Ok, Err } from "ts-results";
 import { AccountService } from ".";
+import { sendDiscordNotification } from "./webhookService"; // import the webhook service
+
 
 export const createTimetable = async (
   email: string,
@@ -33,6 +35,8 @@ export const createTimetable = async (
       },
     },
   });
+  // Send Discord notification after successful timetable creation
+  await sendDiscordNotification(`New timetable created: **${timetable.name}** by ${account.email}`);
 
   return Ok(timetable);
 };
