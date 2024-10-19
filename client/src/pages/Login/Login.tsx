@@ -21,7 +21,7 @@ function Login() {
       <div className="Login"></div>
       <div className="Login__panel">
         <div className="Login__panel__content">
-          <img src="/carleton_logo_black.png"></img>
+          <img id="animatedImage" src="/carleton_logo_black.png"></img>
           <div className="Login__panel__content__message">
             <div>Welcome to the Carleton SSO Federated Portal.</div>
             <div>

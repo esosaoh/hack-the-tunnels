@@ -1,47 +1,63 @@
 @import "../../globals.scss";
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .Timetable {
   font-size: 0.8rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 
+  font-family:'Poppins';
   table {
     width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
+    //border-collapse: collapse;
+    //border-spacing: 0px;
+    
     border-color: black;
-
-    tr {
-      border: solid 2px #e0e0e0;
+    
+    .Timetable_cell--time{
+      background-color: #e0e0e0;
+    }
+    tr{
+      border-collapse: collapse;
     }
 
     td {
-      border: solid 2px #e0e0e0;
+      border: solid 2px #bcbcbc;
+      border-radius: 5px;
       padding: 10px;
       text-align: center;
-      height: 10px;
+      height: 30px;
     }
 
     th {
       width: 5rem !important;
       max-width: 5rem !important;
+      border-radius: 5%;
+      font-style: bold;
+      color: #ffffff;
     }
+  }
+  .Timetable__head {
+    margin:0;
+    border-spacing: 0px;
   }
 
   &__head {
-    background-color: #cccccc;
+    height: 60px;
+    background-color: #ea2f2f;
   }
 
   &__cell--event {
-    background-color: #cccccc;
+    background-color: #d6d6d6;
+    border-radius: 10%;
   }
 
   &__cell--time {
-    border-bottom: solid 2px #ffffff !important;
+    //border-bottom: solid 2px #ffffff !important;
   }
 
   &__cell--multiple-events {
-    background-color: rgba($theme--dark, 0.31);
+    background-color: rgb(214, 52, 79);
     color: $theme--dark;
     font-weight: bold;
   }
