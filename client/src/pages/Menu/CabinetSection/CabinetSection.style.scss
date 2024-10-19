@@ -2,9 +2,11 @@
 
 .CabinetSection {
   display: flex;
+  color: rgb(255, 255, 255);
   gap: 0.5rem;
   img {
     height: 3.2rem;
+    color: rgb(255, 0, 0);
   }
 
   li {
@@ -13,10 +15,12 @@
 
   a {
     text-decoration: none;
-    color: $theme--dark;
+    //color: $theme--dark;
+    color: rgb(255, 0, 0);
   }
 
   a:hover {
     text-decoration: underline;
+    color: rgb(255, 217, 0);
   }
 }

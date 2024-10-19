@@ -6,7 +6,8 @@
   display: flex;
   align-items: center;
   height: 3rem;
-  background-color: $theme;
+  background-color: rgb(0, 0, 0);
+  
   gap: 2rem;
 
   img {
@@ -16,13 +17,14 @@
   &__seperator {
     height: 100%;
     opacity: 0.3;
-    background-color: white;
+    background-color: rgb(255, 0, 0);
     width: 0.13rem;
   }
 
   &__title {
     font-family: "Roboto", sans-serif;
-    color: white;
+    color: rgb(255, 0, 0);
     font-size: 1.6rem;
+
   }
 }

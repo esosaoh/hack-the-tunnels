@@ -1,6 +1,7 @@
 .Central {
   &__page {
     height: 100vh;
+    background-color: black;
     margin-left: 1%;
     margin-right: 2%;
     font-style: normal;
@@ -9,18 +10,21 @@
       arial narrow,
       helvetica,
       sans-serif;
+    color: rgb(255, 0, 0);
 
     &__title {
       margin-top: 1.67rem;
       margin-bottom: 1.5rem;
       font-weight: normal;
       font-size: 1.3em;
+      color: rgb(255, 0, 0);
     }
 
     &__footer {
       font-weight: bold;
       font-size: 80%;
       text-align: left;
+      color: rgb(255, 0, 0);
 
       &__release {
         text-transform: uppercase;
