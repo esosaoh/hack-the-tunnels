@@ -1,7 +1,7 @@
 .Central {
   &__page {
     height: 100vh;
-    margin-left: 1%;
+    margin-left: 2%;
     margin-right: 2%;
     font-style: normal;
     font-family:
@@ -13,8 +13,10 @@
     &__title {
       margin-top: 1.67rem;
       margin-bottom: 1.5rem;
-      font-weight: normal;
-      font-size: 1.3em;
+      font-weight: bold;
+      font-size: 1.4em;
+      font-family: 'Poppins';
+      padding-left: 10px;
     }
 
     &__footer {
